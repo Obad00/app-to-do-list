@@ -1,0 +1,15 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <label for="title">Title:</label>
+    <input id="title" formControlName="title" />
+    
+    <label for="description">Description:</label>
+    <textarea id="description" formControlName="description"></textarea>
+  
+    <label>
+      <input type="checkbox" formControlName="completed" />
+      Completed
+    </label>
+  
+    <button type="submit">Save</button>
+  </form>
+  
